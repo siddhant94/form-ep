@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./form.css">
+  <title>Contact Form</title>
+</head>
+<body>    
+  <div class=" columns center-wrapper is-paddingless">
+    <div class="column is-2">
+        
+    </div>
+    <div class="column is-8">
+      <ul class="content-wrapper">
+        <li id="list-item" class="question-wrapper focus scroll"><!-- 1st Question-->
+          <div class="card fix-boxshadow">
+            <div class="card-content">
+              <div class="field">
+                <label class="label question-text">What is your name?</label>
+                <p class="control">
+                  <input class="input input-wrapper" type="text" placeholder="Text input">
+                  <a href="#" id="okButton" class="button question-button is-primary is-hidden"> Ok </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 2nd Question-->
+        <li id="question2" class="question-wrapper">
+          <div class="card fix-boxshadow">
+            <div class="card-content">
+              <div class="field">
+                <label class="label question-text">Are you a parent?</label>
+                <p class="control">
+                  <input class="input input-wrapper" type="text" placeholder="Text input">
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!--3rd Questions-->
+        <li id="question3" class="question-wrapper">
+          <div class="card fix-boxshadow">
+            <div class="card-content">
+              <div class="field">
+                <label class="label question-text">How did you know about Entrance Plus?</label>
+                <p class="control">
+                  <input class="input input-wrapper" type="text" placeholder="Text input">
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>  
+  </div>
+
+  <script src="//cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/velocity/1.5/velocity.ui.min.js"></script>
+  <script src="app.js"></script>
+  <script type="text/javascript">
+    //$("html").velocity("scroll", { offset: "100px", mobileHA: false });
+    //$("#okButton").click(function(){
+    //$(".scroll").velocity({ opacity: 0 }, function(){
+    //$(this)
+    //  .velocity("scroll", 1000)
+    //  .velocity({ opacity: 1 });
+  //});
+  //});
+  Velocity(document.getElementById("list-item"), { opacity: 0.5 }, { duration: 1000 });
+  </script>
+</body>
+</html>
