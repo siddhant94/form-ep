@@ -1,0 +1,24 @@
+{
+  "name": "form-ep",
+  "version": "0.0.1",
+  "description": "Generic form builder",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhant94/form-ep.git"
+  },
+  "author": "Siddhant Sinha <sid.sinha94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhant94/form-ep/issues"
+  },
+  "homepage": "https://github.com/siddhant94/form-ep#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "st": "^1.2.0"
+  }
+}
